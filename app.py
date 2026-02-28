@@ -2,6 +2,7 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 import requests
+df_global = None
 
 from config import APP_TITLE, DATA_FILE_PATH, AUTH_DISABLED, COL_DATE, COL_SELLER_ID, COL_PRODUCT, COL_AMOUNT, COL_QTY
 from data import load_excel
@@ -248,7 +249,7 @@ if role == "member":
 
         # Aynı opsiyonel filtreleri uygula
         def apply_if(col):
-            nonlocal df_global
+            global df_global
             if col in df_global.columns and col in df.columns:
                 # seçimleri sidebar'dan okuyamıyoruz; bu yüzden f'nin filtrelenmiş değer setini referans alıyoruz
                 # Ürün filtresi
