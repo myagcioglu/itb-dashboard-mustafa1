@@ -1,0 +1,4 @@
+username,display_name,role,member_id,password_hash
+admin,Admin,admin,,$2b$12$CFEHrdJ12TCUCk00eATZleHn9ksROMFcIw2ArIDh6X/b4pF7LVokO
+personel1,Personel 1,staff,,$2b$12$QA9PqNDEVvShgPjJW/5gMuEVT76KNK3zsOm7DVwnF.uxLld3bj2FW
+uye_1001,Üye 1001 (Demo),member,1001,$2b$12$GusaZtzOTsOOJ/sQyYCi1un4r7AK7YKrVARNoiAXx/cNV0n.6YyQi
